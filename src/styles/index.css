@@ -6,15 +6,19 @@
   --color-dark-gray: #10100e;
   --color-violet: #ae72c2;
 
+  --spacing-ultra-small: 5px;
   --spacing-small: 10px;
   --spacing-medium: 20px;
   --spacing-large: 30px;
 
   --transition: .4s;
 
+  --margin-list: 7px;
+
   --font-family-main: sans-serif;
 
   --border-radius-small: 3px;
+  --border-radius-medium: 5px;
 
   --text-shadow-yellow: 
     0 0 2px var(--color-white),
