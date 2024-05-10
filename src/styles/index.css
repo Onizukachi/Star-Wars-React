@@ -39,6 +39,17 @@
 
   --color-yellow: #ffff00;
 
+  --box-shadow-white: 
+    0 16px 24px 2px rgba(255, 255, 255, 0.02),
+    0 6px 30px 5px rgba(255, 255, 255, 0.04),
+    0 8px 10px -5px rgba(255, 255, 255, 0.01);
+
+
+  --box-shadow-yellow: 
+    0 16px 24px 2px rgba(0, 0, 0, 0.05),
+    0 6px 30px 5px rgba(0, 0, 0, 0.01),
+    0 8px 10px -5px rgba(0, 0, 0, 0.02);
+
   --theme-default-header: #cccc46;
 
   --theme-default-bgimage: url(@static/bg.jpg)

@@ -4,7 +4,6 @@ import img from './img/not_found.png'
 
 const NotFoundPage = () => {
     let location = useLocation();
-    console.log(location.pathname)
   return (
     <>
         <img className={styles.img} src={img} alt='Not Found'></img>

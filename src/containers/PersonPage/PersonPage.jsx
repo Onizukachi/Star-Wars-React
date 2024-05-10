@@ -6,6 +6,7 @@ import PersonImage from '@components/PersonPage/PersonImage'
 import PersonLinkBack from '@components/PersonPage/PersonLinkBack';
 
 import React, { useEffect, useState, Suspense } from 'react';
+import { useSelector } from 'react-redux'
 import { getApiResponse } from '@utils/network';
 import { getPeopleImage } from '@services/getPeopleData';
 import { useParams } from 'react-router-dom';
@@ -20,10 +21,14 @@ const PersonPage = ({ setErrorApi }) => {
   const [personName, setPersonName] = useState(null)
   const [personPhoto, setPersonPhoto] = useState(null)
   const [personFilms, setPersonFilms] = useState(null)
+  const [personFavorite, setPersonFavorite] = useState(false)
 
+  const storeData = useSelector(state => state.favoriteReducer)
+  
   useEffect(() => {
     const getResponse = async () => {
       const res = await getApiResponse(API_PERSON + `/${id}`)
+      storeData[id] ? setPersonFavorite(true) : setPersonFavorite(false)
 
       if (res) {
         setPersonInfo([
@@ -54,7 +59,7 @@ const PersonPage = ({ setErrorApi }) => {
       <div className={styles.wrapper}>
         <span className={styles.person__name}>{personName}</span>
         <div className={styles.container}>
-          <PersonImage personPhoto={personPhoto} personName={personName} />
+          <PersonImage personFavorite={personFavorite} setPersonFavorite={setPersonFavorite} personId={id} personPhoto={personPhoto} personName={personName} />
           {personInfo && <PersonInfo personInfo={personInfo} /> }
           {personFilms && 
             (<Suspense fallback={<UILoading />}>

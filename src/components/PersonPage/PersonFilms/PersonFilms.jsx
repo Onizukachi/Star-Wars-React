@@ -10,7 +10,6 @@ const PersonFilms = ({ personFilms }) => {
             const filmsHTTPS = personFilms.map(url => changeHTTP(url));
             const response = await makeConcurrentRequest(filmsHTTPS);
             setFilmsNames(response)
-            console.log(filmsNames)
         })()
     }, [])
 
