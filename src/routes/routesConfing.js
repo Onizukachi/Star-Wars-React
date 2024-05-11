@@ -4,6 +4,7 @@ import NotFoundPage from '@containers/NotFoundPage'
 import PersonPage from '@containers/PersonPage'
 import FavoritesPage from '@containers/FavoritesPage';
 import SearchPage from '@containers/SearchPage';
+import ErrorMessage from '@components/ErrorMessage'
 import { exact } from 'prop-types';
 
 const routesConfig = [
@@ -30,6 +31,10 @@ const routesConfig = [
   {
     path: '/search',
     element: SearchPage
+  },
+  {
+    path: '/fail',
+    element: ErrorMessage
   },
   {
     path: '*',
