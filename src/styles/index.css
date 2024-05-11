@@ -87,3 +87,7 @@ body {
   transition: color var(--transition);
 }
 
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
