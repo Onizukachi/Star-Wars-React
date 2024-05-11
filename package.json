@@ -2,6 +2,7 @@
   "name": "react_star_wars",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://onizukachi.github.io/Star-Wars-React/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.4",
     "@testing-library/jest-dom": "^5.17.0",
