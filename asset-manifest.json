@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Star-Wars-React/static/css/main.0c25267d.css",
-    "main.js": "/Star-Wars-React/static/js/main.80fde68a.js",
+    "main.js": "/Star-Wars-React/static/js/main.24dd3b1a.js",
     "static/css/152.31df5ed4.chunk.css": "/Star-Wars-React/static/css/152.31df5ed4.chunk.css",
     "static/js/152.9f58a514.chunk.js": "/Star-Wars-React/static/js/152.9f58a514.chunk.js",
     "static/media/han-solo.mp4": "/Star-Wars-React/static/media/han-solo.e4d765d9078d8e245fa7.mp4",
@@ -23,12 +23,12 @@
     "index.html": "/Star-Wars-React/index.html",
     "static/media/arrow.svg": "/Star-Wars-React/static/media/arrow.821d1af7a54f0088f3c39a456cbf6e26.svg",
     "main.0c25267d.css.map": "/Star-Wars-React/static/css/main.0c25267d.css.map",
-    "main.80fde68a.js.map": "/Star-Wars-React/static/js/main.80fde68a.js.map",
+    "main.24dd3b1a.js.map": "/Star-Wars-React/static/js/main.24dd3b1a.js.map",
     "152.31df5ed4.chunk.css.map": "/Star-Wars-React/static/css/152.31df5ed4.chunk.css.map",
     "152.9f58a514.chunk.js.map": "/Star-Wars-React/static/js/152.9f58a514.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0c25267d.css",
-    "static/js/main.80fde68a.js"
+    "static/js/main.24dd3b1a.js"
   ]
 }
